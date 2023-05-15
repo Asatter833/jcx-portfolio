@@ -1,7 +1,6 @@
 import "../styles/globals.css";
 import { Noto_Sans } from "next/font/google";
-import Navbar from "@/components/Navbar";
-
+import Navbar from "../components/Navbar";
 const noto = Noto_Sans({
   weight: ["400", "500", "600"],
   subsets: ["cyrillic"],
