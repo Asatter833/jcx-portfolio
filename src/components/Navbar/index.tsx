@@ -10,11 +10,11 @@ const Index = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <header className="w-full mx-auto md:px-12 py-4 fixed z-20 top-0 left-0 bg-slate-900">
-        <div className="flex justify-evenly items-center z-20">
-          <div className="flex gap-12 items-center z-20">
+      <header className="w-full mx-auto sm:px-12 py-4 sticky z-20 top-0 left-0 bg-slate-900">
+        <div className="flex flex-row-reverse sm:flex-row justify-between items-center z-20 px-6">
+          <div className="flex gap-12 items-center z-20 ">
             <div
-              className="flex flex-row gap-2 justify-between items-center z-20"
+              className="flex flex-row gap-2 justify-between items-center z-20 border-1"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
               <button
@@ -41,28 +41,31 @@ const Index = () => {
                   ></span>
                 </div>
               </button>
-              <p className="text-xs font-medium text-slate-300">Menu</p>
-            </div>
-            <div className="hidden sm:block">
-              <HoverButton />
+              <p className="text-xs font-medium text-slate-300 cursor-pointer">
+                Menu
+              </p>
             </div>
           </div>
-          <div className="z-20">
+          <div>
             <Image
               src={Logo}
               width={90}
               height={60}
               alt="Picture of the author"
+              priority
             />
           </div>
-          <div className="hidden sm:block z-20">
-            <div className="flex flex-row gap-8 ">
+          <div className="hidden sm:block">
+            <HoverButton />
+          </div>
+          {/* <div className="hidden sm:block z-20 ">
+            <div className="flex flex-row gap-8 text-xs">
               <p className="text-xs font-extralight text-slate-300">16777</p>
               <p className="text-xs font-extralight text-slate-300">
                 SALES@JCXBD.COM
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
         <MenuOverlay navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
       </header>

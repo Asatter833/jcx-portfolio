@@ -15,6 +15,9 @@ module.exports = {
       colors: {
         "line-color": "var(--line_color)",
       },
+      variants: {
+        width: ["responsive", "hover", "focus"],
+      },
     },
   },
   plugins: [],
