@@ -4,7 +4,7 @@
 
 @layer components {
   .nav-li {
-    @apply flex w-full leading-3 list-none focus:outline-none py-0 tracking-normal opacity-50 hover:opacity-100 hover:pl-8 transition-all duration-200 ease-in-out;
+    @apply flex w-full leading-3 list-none focus:outline-none py-0 tracking-normal opacity-50 hover:opacity-100 hover:pl-6 hover:duration-500 transition-all duration-200 ease-in-out;
   }
 }
 
