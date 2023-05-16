@@ -14,3 +14,9 @@
 h1 {
   font-family: 'Bodoni Moda', serif !important;
 }
+
+@layer base {
+  html {
+      -webkit-tap-highlight-color: transparent;
+  }
+}

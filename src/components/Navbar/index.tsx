@@ -11,10 +11,10 @@ const Index = () => {
   return (
     <>
       <header className="w-full mx-auto sm:px-12 py-4 sticky z-20 top-0 left-0 bg-slate-900">
-        <div className="flex flex-row-reverse sm:flex-row justify-between items-center z-20 px-6">
+        <div className="flex flex-row sm:flex-row justify-between items-center z-20 px-6">
           <div className="flex gap-12 items-center z-20 ">
             <div
-              className="flex flex-row gap-2 justify-between items-center z-20 border-1"
+              className="flex flex-row gap-2 justify-between items-center z-20"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
               <button
@@ -58,14 +58,6 @@ const Index = () => {
           <div className="hidden sm:block">
             <HoverButton />
           </div>
-          {/* <div className="hidden sm:block z-20 ">
-            <div className="flex flex-row gap-8 text-xs">
-              <p className="text-xs font-extralight text-slate-300">16777</p>
-              <p className="text-xs font-extralight text-slate-300">
-                SALES@JCXBD.COM
-              </p>
-            </div>
-          </div> */}
         </div>
         <MenuOverlay navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
       </header>
