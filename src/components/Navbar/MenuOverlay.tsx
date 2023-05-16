@@ -15,7 +15,6 @@ const MenuOverlay: React.FC<{
         `}
         // onClick={() => setNavbarOpen((n) => !n)}
       />
-      <button className=""></button>
       <nav
         className={`fixed flex top-0 left-0 w-full sm:w-[85vw] md:w-[65vw] px-12 sm:px-24 z-10 h-screen pt-24 bg-gray-900 transform delay-100 transition duration-500 ease-in-out ${
           navbarOpen
