@@ -86,19 +86,19 @@ const Index: React.FC = () => {
             </button>
           </div>
 
-          <div className="flex flex-row items-center gap-3">
+          <div
+            className="flex flex-row items-center gap-3"
+            onClick={() =>
+              window?.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              })
+            }
+          >
             <p className="text-xs font-medium text-slate-300 cursor-pointer hover:text-white">
               TOP
             </p>
-            <button
-              className="transition ease-in-out delay-100 border border-gray-400 hover:border-line-color rounded-full p-0"
-              onClick={() =>
-                window?.scrollTo({
-                  top: 0,
-                  behavior: "smooth",
-                })
-              }
-            >
+            <button className="transition ease-in-out delay-100 border border-gray-400 hover:border-line-color rounded-full p-0">
               <Icon
                 icon={"material-symbols:arrow-drop-up-rounded"}
                 className="mx-auto text-3xl text-line-color"
@@ -107,7 +107,9 @@ const Index: React.FC = () => {
           </div>
         </div>
         <div className="sm:flex justify-center hidden">
-          <Image src={Logo} width={120} height={80} alt="JCX" priority />
+          <Link href={"#"}>
+            <Image src={Logo} width={120} height={80} alt="JCX" priority />
+          </Link>
         </div>
         <div className="flex justify-center sm:pt-6">
           <h1 className="transition ease-in-out delay-100 text-4xl text-gray-200 hover:text-line-color">
@@ -136,7 +138,7 @@ const Index: React.FC = () => {
 
           <p className="text-[10px]">
             WEBSITE BY <br />
-            <span className="text-white">UDEFINED SOLUTION</span>
+            <span className="text-white">UNDEFINED SOLUTION</span>
           </p>
         </div>
       </div>

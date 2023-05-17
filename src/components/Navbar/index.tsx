@@ -5,6 +5,7 @@ import Image from "next/image";
 import Logo from "../../../public/logo.svg";
 import MenuOverlay from "./MenuOverlay";
 import { Icon } from "@iconify/react";
+import Link from "next/link";
 
 const Index = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -49,7 +50,9 @@ const Index = () => {
             </div>
           </div>
           <div className={"z-20 sm:z-0"}>
-            <Image src={Logo} width={90} height={60} alt="JCX" priority />
+            <Link href={"#"}>
+              <Image src={Logo} width={90} height={60} alt="JCX" priority />
+            </Link>
           </div>
           <div className="z-20 sm:hidden ">
             <button className="w-10 h-10 transition ease-in-out delay-150 border hover:border-line-color rounded-full lg:border-none duration-500">
