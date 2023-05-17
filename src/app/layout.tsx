@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 export const metadata = {
   icons: "/favicon.svg",
@@ -18,7 +19,9 @@ export default function RootLayout({
       <body>
         <Navbar />
         <div className="min-h-[80vh]">{children}</div>
-        <footer>Footer</footer>
+        <footer>
+          <Footer />
+        </footer>
       </body>
     </html>
   );

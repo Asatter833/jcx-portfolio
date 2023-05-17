@@ -1,15 +1,1 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-@layer components {
-  .nav-li {
-    @apply flex w-full leading-3 list-none focus:outline-none py-0 tracking-normal opacity-50 hover:opacity-100 hover:pl-6 hover:duration-500 transition-all duration-200 ease-in-out;
-  }
-}
-
-@layer components {
-  .nav-link {
-    @apply h-full w-full py-2 text-2xl sm:text-3xl md:text-4xl text-white;
-  }
-}

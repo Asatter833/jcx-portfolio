@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css";
+import "../../styles/globals.css";
 import Link from "next/link";
 
 const MenuOverlay: React.FC<{
@@ -13,10 +13,10 @@ const MenuOverlay: React.FC<{
           navbarOpen ? "fixed" : "hidden"
         } top-[72px] left-0 transition duration-200
         `}
-        // onClick={() => setNavbarOpen((n) => !n)}
+        onClick={() => setNavbarOpen((n: any) => !n)}
       />
       <nav
-        className={`fixed flex top-0 left-0 w-full sm:w-[85vw] md:w-[65vw] px-12 sm:px-24 z-10 h-screen pt-24 bg-gray-900 transform delay-100 transition duration-500 ease-in-out ${
+        className={`fixed flex top-0 left-0 w-full sm:w-[85vw] md:w-[65vw] px-12 sm:px-24 z-10 h-screen overflow-y-auto pt-24 bg-gray-900 transform delay-100 transition duration-500 ease-in-out ${
           navbarOpen
             ? "opacity-100 translate-x-0"
             : "opacity-0 -translate-x-full"
@@ -119,11 +119,11 @@ const MenuOverlay: React.FC<{
             </ul>
           </div>
 
-          <div className="flex flex-col justify-between pb-14 gap-10">
+          <div className="flex flex-col justify-between pb-14 gap-10 ">
             <div>
               <Link
                 href="/"
-                className="text-sm text-white focus:outline-none tracking-normal opacity-50 hover:opacity-100 hover:pl-8 transition-all duration-200 ease-in-out"
+                className="text-sm text-slate-400 focus:outline-none tracking-normal hover:text-line-color transition-all duration-200 ease-in-out"
                 onClick={() => {
                   setNavbarOpen(false);
                 }}
@@ -132,7 +132,7 @@ const MenuOverlay: React.FC<{
               </Link>
               <Link
                 href="/"
-                className="text-sm text-white focus:outline-none tracking-normal opacity-50 hover:opacity-100 hover:pl-8 transition-all duration-200 ease-in-out"
+                className="text-sm text-slate-400 focus:outline-none tracking-normal hover:text-line-color transition-all duration-200 ease-in-out"
                 onClick={() => {
                   setNavbarOpen(false);
                 }}
@@ -141,7 +141,7 @@ const MenuOverlay: React.FC<{
               </Link>
               <Link
                 href="/"
-                className="text-sm text-white focus:outline-none tracking-normal opacity-50 hover:opacity-100 hover:pl-8 transition-all duration-200 ease-in-out"
+                className="text-sm text-slate-400 focus:outline-none tracking-normal hover:text-line-color transition-all duration-200 ease-in-out"
                 onClick={() => {
                   setNavbarOpen(false);
                 }}
@@ -150,7 +150,7 @@ const MenuOverlay: React.FC<{
               </Link>
               <Link
                 href="/"
-                className="text-sm text-white focus:outline-none tracking-normal opacity-50 hover:opacity-100 hover:pl-8 transition-all duration-200 ease-in-out"
+                className="text-sm text-slate-400 focus:outline-none tracking-normal hover:text-line-color transition-all duration-200 ease-in-out"
                 onClick={() => {
                   setNavbarOpen(false);
                 }}
@@ -159,9 +159,11 @@ const MenuOverlay: React.FC<{
               </Link>
             </div>
             <div className="border-b border-line-color" />
-            <div className="text-white opacity-70">
+            <div className="text-slate-400 text-xs">
               <p>
-                JCX Business Tower Plot 1136/A,
+                JCX Business Tower
+                <br />
+                Plot 1136/A,
                 <br />
                 Japan Street, Block # I, <br />
                 Bashundhara R/A, Dhaka - 1229,
