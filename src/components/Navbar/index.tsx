@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import React from "react";
 import HoverButton from "../HoverButton";
 import Image from "next/image";
@@ -11,11 +10,11 @@ const Index = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <header className="w-full mx-auto sm:px-12 py-4 sticky z-20 top-0 left-0 bg-slate-900">
+      <header className="w-full mx-auto px-4 sm:px-12 py-4 sticky z-20 top-0 left-0 bg-slate-900">
         <div className="flex flex-row sm:flex-row justify-between items-center z-20 px-6">
           <div className="flex gap-12 items-center ">
             <div
-              className="flex flex-row pl-4 justify-between items-center"
+              className="flex flex-row justify-between items-center"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
               <button
@@ -44,22 +43,16 @@ const Index = () => {
                   ></span>
                 </div>
               </button>
-              <p className="text-xs font-medium text-slate-300 cursor-pointer lg:z-20 hidden lg:block">
+              <p className="text-xs font-medium text-slate-300 cursor-pointer hover:text-white lg:z-20 hidden lg:block">
                 Menu
               </p>
             </div>
           </div>
           <div className={"z-20 sm:z-0"}>
-            <Image
-              src={Logo}
-              width={90}
-              height={60}
-              alt="Picture of the author"
-              priority
-            />
+            <Image src={Logo} width={90} height={60} alt="JCX" priority />
           </div>
           <div className="z-20 sm:hidden ">
-            <button className="w-10 h-10  transition ease-in-out delay-150 border hover:border-line-color rounded-full lg:border-none duration-500">
+            <button className="w-10 h-10 transition ease-in-out delay-150 border hover:border-line-color rounded-full lg:border-none duration-500">
               <Icon
                 className="text-xl translate-x-1/2 -translate-y-1/6 right-1/4 top-1/2"
                 color="#f56a5b"
