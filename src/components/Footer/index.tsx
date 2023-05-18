@@ -7,7 +7,7 @@ import Logo from "../../../public/logo.svg";
 const Index: React.FC = () => {
   return (
     <>
-      <div className="bg-gray-900 mx-auto w-full max-w-screen p-8 md:px-28 md:pt-14">
+      <div className="bg-gray-900 mx-auto w-full max-w-screen p-8 md:max-w-6xl md:pt-14">
         <div className="flex flex-col md:flex-row justify-start gap-3 md:gap-8">
           <Link
             href="/"

@@ -10,10 +10,10 @@ const Index: React.FC = () => {
             <div className="uppercase text-slate-200">
               <h1 className="font-bold">Discover</h1>
               <div className="content">
-                <h1 className="text-4xl md:text-6xl lg:text-8xl absolute">
+                <h1 className="text-4xl sm:text-6xl lg:text-8xl absolute">
                   Perfection
                 </h1>
-                <h1 className="text-4xl md:text-6xl lg:text-8xl ">
+                <h1 className="text-4xl sm:text-6xl lg:text-8xl ">
                   Perfection
                 </h1>
               </div>

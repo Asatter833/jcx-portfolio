@@ -9,7 +9,7 @@ const MenuOverlay: React.FC<{
   return (
     <>
       <div
-        className={`h-full w-full bg-slate-800 bg-opacity-40 ${
+        className={`h-screen w-full bg-slate-800 bg-opacity-70 ${
           navbarOpen ? "fixed" : "hidden"
         } top-[72px] left-0 transition duration-200
         `}
