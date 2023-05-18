@@ -6,9 +6,15 @@ import Logo from "../../../public/logo.svg";
 import MenuOverlay from "./MenuOverlay";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
+import AOS from "aos";
 
 const Index = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
+
+  React.useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <>
       <header className="w-full mx-auto px-4 sm:px-20 py-4 sticky z-20 top-0 left-0 bg-gray-900 backdrop-filter backdrop-blur-sm border-b border-slate-900 bg-opacity-40">
