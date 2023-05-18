@@ -59,7 +59,7 @@ const Index: React.FC = () => {
                   width={350}
                   priority
                   alt="JCX - MM Villa"
-                  className="w-full h-96 sm:h-[550px] min-w-[240px] sm:min-w-[340px] max-w-md z-[1] relative rounded"
+                  className="w-full h-96 sm:h-[480px] min-w-[240px] sm:min-w-[340px] max-w-md z-[1] relative rounded"
                 />
               </div>
             </div>
