@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import HoverButton from "../HoverButton";
+import HoverButton from "../HomePage/HoverButton";
 import Image from "next/image";
 import Logo from "../../../public/logo.svg";
 import MenuOverlay from "./MenuOverlay";
@@ -11,7 +11,7 @@ const Index = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <header className="w-full mx-auto px-4 sm:px-12 py-4 sticky z-20 top-0 left-0 bg-slate-900">
+      <header className="w-full mx-auto px-4 sm:px-20 py-4 sticky z-20 top-0 left-0 bg-gray-900 backdrop-filter backdrop-blur-sm border-b border-slate-900 bg-opacity-40">
         <div className="flex flex-row sm:flex-row justify-between items-center z-20 px-6">
           <div className="flex gap-12 items-center ">
             <div
