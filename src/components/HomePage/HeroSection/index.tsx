@@ -26,7 +26,7 @@ const Index: React.FC = () => {
               </h1>
             </div>
             <Link href={"#"}>
-              <button className="border-2 bg-gradient-to-br from-[#f1796c] to-[#ee5847] font-bold text-sm w-fit py-[6px] px-5 rounded-md hover:border-slate-800 hover:text-slate-200 transition ease-in-out delay-150 duration-500 ">
+              <button className="border-2 border-slate-800 bg-gradient-to-br from-[#f1796c] to-[#ee5847] font-bold text-sm w-fit py-[6px] px-5 rounded-md hover:border-slate-200 hover:text-slate-200 transition ease-in-out delay-150 duration-500 ">
                 EXPLORE
               </button>
             </Link>
