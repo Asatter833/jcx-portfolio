@@ -10,15 +10,22 @@ const Index: React.FC = () => {
     <>
       <div className="min-h-[50vh]">
         <div className="max-w-6xl mx-auto px-5 sm:px-12 pt-20">
-          <h1
-            className="text-center md:text-left text-slate-200 scale-100 font-serif text-4xl tracking-wide leading-snug uppercase"
-            data-aos="fade-up"
-          >
-            Top <span className="text-line-color">Rated</span> <br />{" "}
-            <span className="text-5xl font-medium">
-              Wo<span className="text-line-color">rks</span>
-            </span>
-          </h1>
+          <div className="flex flex-col items-center sm:items-start text-[#f56a5b] ">
+            <h1
+              className="text-center text-4xl sm:text-6xl uppercase"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              Top <span className="text-slate-200">Rated</span>
+            </h1>
+            <h1
+              className="text-center text-4xl sm:text-6xl uppercase"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
+              Wo<span className="text-slate-200">rks</span>
+            </h1>
+          </div>
 
           <div className="flex flex-col-reverse gap-6 md:flex-row justify-between flex-1">
             <div

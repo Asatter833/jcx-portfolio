@@ -8,16 +8,16 @@ const Index: React.FC = () => {
       <div className="min-h-[50vh] w-full">
         <div className="w-full mx-auto pt-10 sm:pt-24 py-10 bg-gradiant-to-b from-slate-300 via-transparent to-slate-900">
           <div className="max-w-6xl mx-auto px-12 sm:px-14 ">
-            <div className="flex flex-col items-start text-[#f56a5b] ">
+            <div className="flex flex-col items-center sm:items-start text-[#f56a5b] ">
               <h1
-                className="text-center text-4xl sm:text-6xl lg:text-8xl uppercase"
+                className="text-center text-4xl sm:text-6xl uppercase"
                 data-aos="fade-right"
                 data-aos-duration="1000"
               >
                 Our
               </h1>
               <h1
-                className="text-center text-4xl sm:text-6xl lg:text-8xl uppercase"
+                className="text-center text-4xl sm:text-6xl  uppercase"
                 data-aos="fade-right"
                 data-aos-duration="1500"
               >
@@ -50,7 +50,7 @@ const Index: React.FC = () => {
             </Link>
           </div>
           <div className="">
-            <div className="max-w-6xl mx-auto px-5 sm:px-12 py-8">
+            <div className="max-w-6xl mx-auto px-5 sm:px-20 py-8">
               <div className="flex flex-col-reverse lg:flex-row justify-between gap-8 min-h-[50vh]">
                 <div className="flex-1 relative grid gap-2">
                   <div className="relative min-h-[300px]">
