@@ -24,8 +24,9 @@ const Index: React.FC = () => {
               data-aos="fade-right"
             >
               <p className="max-w-sm text-xl text-center">
-                "Trusting a company with your land is very important, and JCX
-                Developments was the right choice as they earned our trust."
+                &quot;Trusting a company with your land is very important, and
+                JCX Developments was the right choice as they earned our
+                trust.&quot;
               </p>
             </div>
           </Swiper>
